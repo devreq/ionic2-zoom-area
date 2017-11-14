@@ -14,11 +14,11 @@ import { ZoomAreaProvider } from './zoom-area.provider';
       </div>
 
       <ion-fab right top [@visibilityChanged]="zoomControlsState">
-          <button (click)="zoomIn()" ion-fab color="primary" class="btn-zoom">
+          <button (click)="zoomIn()" ion-fab color="primary" [hidden]="true" class="btn-zoom">
               <ion-icon name="add-circle"></ion-icon>
           </button>
 
-          <button (click)="zoomOut()" ion-fab color="primary" class="btn-zoom">
+          <button (click)="zoomOut()" ion-fab color="primary" [hidden]="true" class="btn-zoom">
               <ion-icon name="remove-circle"></ion-icon>
           </button>
 
